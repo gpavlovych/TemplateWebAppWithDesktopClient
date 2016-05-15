@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
   <Metadata>
     <Identity Id="WebAppWithDesktopClient.George Pavlovych.6d2d99f9-9b43-4b25-ae3d-b0f55540cf60" Version="1.0" Language="en-US" Publisher="George Pavlovych" />
@@ -7,8 +7,76 @@
   </Metadata>
   <Installation>
     <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[14.0]" />
+    <InstallationTarget Version="[14.0,15.0)" Id="Microsoft.VisualStudio.Enterprise" />
   </Installation>
   <Dependencies>
     <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" d:Source="Manual" Version="[4.5,)" />
   </Dependencies>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.Assembly" d:Source="File" Path="TemplateBuilder.dll" AssemblyName="TemplateBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" />
+    <Asset Type="Microsoft.VisualStudio.ProjectTemplate" d:Source="Project" d:TargetPath="|WebAppWithDesktopClient.ProjectTemplate;TemplateProjectOutputGroup|" Path="ProjectTemplates" d:VsixSubPath="ProjectTemplates" d:ProjectName="%CurrentProject%.ProjectTemplate" />
+    <Asset d:Source="File" Path="Packages\Antlr.3.4.1.9004.nupkg" Type="Antlr.3.4.1.9004.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\AutoFixture.3.43.0.nupkg" Type="AutoFixture.3.43.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\AutoFixture.AutoMoq.3.43.0.nupkg" Type="AutoFixture.AutoMoq.3.43.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\bootstrap.3.0.0.nupkg" Type="bootstrap.3.0.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\CommonServiceLocator.1.3.nupkg" Type="CommonServiceLocator.1.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\EntityFramework.6.1.3.nupkg" Type="EntityFramework.6.1.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\FluentAssertions.4.3.2.nupkg" Type="FluentAssertions.4.3.2.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\jQuery.1.10.2.nupkg" Type="jQuery.1.10.2.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\jQuery.Validation.1.11.1.nupkg" Type="jQuery.Validation.1.11.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.1.2.3.nupkg" Type="Microsoft.ApplicationInsights.1.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.Agent.Intercept.1.2.0.nupkg" Type="Microsoft.ApplicationInsights.Agent.Intercept.1.2.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.DependencyCollector.1.2.3.nupkg" Type="Microsoft.ApplicationInsights.DependencyCollector.1.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334.nupkg" Type="Microsoft.ApplicationInsights.JavaScript.0.15.0-build58334.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3.nupkg" Type="Microsoft.ApplicationInsights.PerfCounterCollector.1.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.Web.1.2.3.nupkg" Type="Microsoft.ApplicationInsights.Web.1.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.WindowsServer.1.2.3.nupkg" Type="Microsoft.ApplicationInsights.WindowsServer.1.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3.nupkg" Type="Microsoft.ApplicationInsights.WindowsServer.TelemetryChannel.1.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.Identity.Core.2.2.1.nupkg" Type="Microsoft.AspNet.Identity.Core.2.2.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.Identity.EntityFramework.2.2.1.nupkg" Type="Microsoft.AspNet.Identity.EntityFramework.2.2.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.Identity.Owin.2.2.1.nupkg" Type="Microsoft.AspNet.Identity.Owin.2.2.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.Mvc.5.2.3.nupkg" Type="Microsoft.AspNet.Mvc.5.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.Razor.3.2.3.nupkg" Type="Microsoft.AspNet.Razor.3.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" Type="Microsoft.AspNet.Web.Optimization.1.1.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.5.2.3.nupkg" Type="Microsoft.AspNet.WebApi.5.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.Client.5.2.3.nupkg" Type="Microsoft.AspNet.WebApi.Client.5.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.Core.5.2.3.nupkg" Type="Microsoft.AspNet.WebApi.Core.5.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.OData.5.3.1.nupkg" Type="Microsoft.AspNet.WebApi.OData.5.3.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg" Type="Microsoft.AspNet.WebApi.WebHost.5.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.AspNet.WebPages.3.2.3.nupkg" Type="Microsoft.AspNet.WebPages.3.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg" Type="Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Data.Edm.5.6.0.nupkg" Type="Microsoft.Data.Edm.5.6.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Data.OData.5.6.0.nupkg" Type="Microsoft.Data.OData.5.6.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.jQuery.Unobtrusive.Validation.3.2.3.nupkg" Type="Microsoft.jQuery.Unobtrusive.Validation.3.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Net.Compilers.1.0.0.nupkg" Type="Microsoft.Net.Compilers.1.0.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.3.0.1.nupkg" Type="Microsoft.Owin.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Host.SystemWeb.3.0.1.nupkg" Type="Microsoft.Owin.Host.SystemWeb.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.3.0.1.nupkg" Type="Microsoft.Owin.Security.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.Cookies.3.0.1.nupkg" Type="Microsoft.Owin.Security.Cookies.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.Facebook.3.0.1.nupkg" Type="Microsoft.Owin.Security.Facebook.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.Google.3.0.1.nupkg" Type="Microsoft.Owin.Security.Google.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.MicrosoftAccount.3.0.1.nupkg" Type="Microsoft.Owin.Security.MicrosoftAccount.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.OAuth.3.0.1.nupkg" Type="Microsoft.Owin.Security.OAuth.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Owin.Security.Twitter.3.0.1.nupkg" Type="Microsoft.Owin.Security.Twitter.3.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Microsoft.Web.Infrastructure.1.0.0.0.nupkg" Type="Microsoft.Web.Infrastructure.1.0.0.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Modernizr.2.6.2.nupkg" Type="Modernizr.2.6.2.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Moq.4.2.1510.2205.nupkg" Type="Moq.4.2.1510.2205.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Newtonsoft.Json.6.0.4.nupkg" Type="Newtonsoft.Json.6.0.4.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Newtonsoft.Json.8.0.3.nupkg" Type="Newtonsoft.Json.8.0.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Owin.1.0.nupkg" Type="Owin.1.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\PagedList.1.17.0.0.nupkg" Type="PagedList.1.17.0.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\PagedList.Mvc.4.5.0.0.nupkg" Type="PagedList.Mvc.4.5.0.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Prism.Core.6.1.0.nupkg" Type="Prism.Core.6.1.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Prism.Mvvm.1.1.1.nupkg" Type="Prism.Mvvm.1.1.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Prism.Unity.6.1.1.nupkg" Type="Prism.Unity.6.1.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Prism.Wpf.6.1.0.nupkg" Type="Prism.Wpf.6.1.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Respond.1.2.0.nupkg" Type="Respond.1.2.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\System.Spatial.5.6.0.nupkg" Type="System.Spatial.5.6.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\TemplateBuilder.1.1.4.9-beta.nupkg" Type="TemplateBuilder.1.1.4.9-beta.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Unity.4.0.1.nupkg" Type="Unity.4.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Unity.Mvc.4.0.1.nupkg" Type="Unity.Mvc.4.0.1.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\Unity.WebAPI.5.2.3.nupkg" Type="Unity.WebAPI.5.2.3.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\WebActivatorEx.2.0.nupkg" Type="WebActivatorEx.2.0.nupkg" d:VsixSubPath="Packages" />
+    <Asset d:Source="File" Path="Packages\WebGrease.1.5.2.nupkg" Type="WebGrease.1.5.2.nupkg" d:VsixSubPath="Packages" />
+  </Assets>
 </PackageManifest>

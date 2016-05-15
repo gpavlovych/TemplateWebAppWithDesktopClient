@@ -1,0 +1,68 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>$safeprojectname$</Name>
+    <Description>Project description here</Description>
+    <DefaultName>$safeprojectname$</DefaultName>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType></ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="$safeprojectname$.csproj" File="Desktop.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml">App.xaml</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.xaml.cs">App.xaml.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="$safeprojectname$_TemporaryKey.pfx">TemporaryKey.pfx</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="false" TargetFileName="app.manifest">app.manifest</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.resx">Resources.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Resources.Designer.cs">Resources.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.settings">Settings.settings</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="Settings.Designer.cs">Settings.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="HttpClientWrapper.cs">HttpClientWrapper.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="IHttpClient.cs">IHttpClient.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISearchService.cs">ISearchService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ISettingsService.cs">ISettingsService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SearchService.cs">SearchService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SettingsService.cs">SettingsService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="ViewModels" TargetFolderName="ViewModels">
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginWindowViewModel.cs">LoginWindowViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindowViewModel.cs">MainWindowViewModel.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <ProjectItem ReplaceParameters="true" TargetFileName="ILoginWindow.cs">ILoginWindow.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginWindow.xaml">LoginWindow.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LoginWindow.xaml.cs">LoginWindow.xaml.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml">MainWindow.xaml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainWindow.xaml.cs">MainWindow.xaml.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>TemplateBuilder, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</Assembly>
+    <FullClassName>TemplateBuilder.ChildWizard</FullClassName>
+  </WizardExtension>
+  <WizardExtension>
+    <Assembly>NuGet.VisualStudio.Interop, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</Assembly>
+    <FullClassName>NuGet.VisualStudio.TemplateWizard</FullClassName>
+  </WizardExtension>
+  <WizardData>
+    <packages repository="extension" repositoryId="WebAppWithDesktopClient.George Pavlovych.6d2d99f9-9b43-4b25-ae3d-b0f55540cf60">
+        <package id="CommonServiceLocator" version="1.3" targetFramework="net452" />
+        <package id="Newtonsoft.Json" version="8.0.3" targetFramework="net452" />
+        <package id="Prism.Core" version="6.1.0" targetFramework="net452" />
+        <package id="Prism.Mvvm" version="1.1.1" targetFramework="net452" />
+        <package id="Prism.Unity" version="6.1.1" targetFramework="net452" />
+        <package id="Prism.Wpf" version="6.1.0" targetFramework="net452" />
+        <package id="Unity" version="4.0.1" targetFramework="net452" />
+    </packages>
+  </WizardData>
+</VSTemplate>
