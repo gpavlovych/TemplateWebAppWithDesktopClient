@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 
 namespace $safeprojectname$.Services
 {
+    /// <summary>The http client wrapper.</summary>
+    /// <remarks>Can't be unit-tested, so excluded from CodeCoverage.</remarks>
     [ExcludeFromCodeCoverage]
     public class HttpClientWrapper : IHttpClient
     {

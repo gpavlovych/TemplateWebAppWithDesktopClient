@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ILoginWindow.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   The LoginWindow interface.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace $safeprojectname$.Views
 {
     /// <summary>The LoginWindow interface.</summary>

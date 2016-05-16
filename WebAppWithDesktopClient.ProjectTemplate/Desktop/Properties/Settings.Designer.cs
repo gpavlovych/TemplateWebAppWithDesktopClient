@@ -61,7 +61,7 @@ namespace $safeprojectname$.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/$saferootprojectname$.Web/")]
+        [global::System.Configuration.DefaultSettingValueAttribute("http://localhost/$safeprojectname$/")]
         public string WebAppUrl {
             get {
                 return ((string)(this["WebAppUrl"]));

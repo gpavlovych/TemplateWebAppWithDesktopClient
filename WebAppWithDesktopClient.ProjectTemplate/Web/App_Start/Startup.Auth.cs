@@ -1,15 +1,5 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="Startup.Auth.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   TODO The startup.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-
-using System;
+﻿using System;
+using System.Diagnostics.CodeAnalysis;
 using System.Web.Mvc;
 using $safeprojectname$.Models;
 using Microsoft.AspNet.Identity;
@@ -21,16 +11,13 @@ using Owin;
 
 namespace $safeprojectname$
 {
-    /// <summary>TODO The startup.</summary>
+    [ExcludeFromCodeCoverage]
     public partial class Startup
     {
         // add this static variable
-        /// <summary>Gets the data protection provider.</summary>
         internal static IDataProtectionProvider DataProtectionProvider { get; private set; }
 
         // For more information on configuring authentication, please visit http://go.microsoft.com/fwlink/?LinkId=301864
-        /// <summary>TODO The configure auth.</summary>
-        /// <param name="app">TODO The app.</param>
         public void ConfigureAuth(IAppBuilder app)
         {
             // add this assignment

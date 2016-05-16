@@ -1,12 +1,9 @@
 ﻿using FluentAssertions;
-
 using $saferootprojectname$.Desktop.Services;
 using $saferootprojectname$.Desktop.ViewModels;
 using $saferootprojectname$.Desktop.Views;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
-
 using Ploeh.AutoFixture;
 
 namespace $safeprojectname$.ViewModels

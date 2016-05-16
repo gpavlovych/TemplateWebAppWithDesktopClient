@@ -1,15 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="HomeControllerTest.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   TODO The home controller test.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using FluentAssertions;
 using $saferootprojectname$.Web.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -17,11 +6,9 @@ using Ploeh.AutoFixture;
 
 namespace $safeprojectname$.Controllers
 {
-    /// <summary>TODO The home controller test.</summary>
     [TestClass]
     public class HomeControllerTest
     {
-        /// <summary>TODO The about.</summary>
         [TestMethod]
         public void About()
         {
@@ -36,7 +23,6 @@ namespace $safeprojectname$.Controllers
             result.ViewData["Message"].Should().Be("Your application description page.");
         }
 
-        /// <summary>TODO The contact.</summary>
         [TestMethod]
         public void Contact()
         {

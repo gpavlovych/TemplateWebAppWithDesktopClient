@@ -1,15 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="LoginWindowViewModel.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   The login window view model.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-
-using System.Windows.Input;
+﻿using System.Windows.Input;
 using $safeprojectname$.Services;
 using $safeprojectname$.Views;
 using Prism.Commands;

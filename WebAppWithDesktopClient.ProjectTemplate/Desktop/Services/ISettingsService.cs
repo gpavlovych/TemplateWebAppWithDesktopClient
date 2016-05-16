@@ -1,12 +1,3 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="ISettingsService.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   The settings service.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
 namespace $safeprojectname$.Services
 {
     /// <summary>The settings service.</summary>

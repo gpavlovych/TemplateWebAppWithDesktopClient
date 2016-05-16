@@ -1,3 +1,4 @@
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Web.Mvc;
 using Microsoft.Practices.Unity.Mvc;
@@ -9,6 +10,7 @@ using System.Web.Http;
 namespace $safeprojectname$.App_Start
 {
     /// <summary>Provides the bootstrapping for integrating Unity with ASP.NET MVC.</summary>
+    [ExcludeFromCodeCoverage]
     public static class UnityWebActivator
     {
         /// <summary>Integrates Unity when the application starts.</summary>

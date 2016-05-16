@@ -1,10 +1,7 @@
 ﻿using FluentAssertions;
-
 using $saferootprojectname$.Desktop.Properties;
 using $saferootprojectname$.Desktop.Services;
-
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 using Ploeh.AutoFixture;
 
 namespace $safeprojectname$.Services

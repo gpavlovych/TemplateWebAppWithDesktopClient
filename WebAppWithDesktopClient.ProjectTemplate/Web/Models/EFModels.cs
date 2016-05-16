@@ -1,17 +1,5 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="EFModels.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   TODO The application user.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-
-using System;
-using System.Collections.Generic;
-using System.Data.Entity;
+﻿using System.Data.Entity;
+using System.Diagnostics.CodeAnalysis;
 using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
@@ -20,12 +8,9 @@ using Microsoft.AspNet.Identity.EntityFramework;
 namespace $safeprojectname$.Models
 {
     // You can add profile data for the user by adding more properties to your ApplicationUser class, please visit http://go.microsoft.com/fwlink/?LinkID=317594 to learn more.
-    /// <summary>TODO The application user.</summary>
+    [ExcludeFromCodeCoverage]
     public class ApplicationUser : IdentityUser
     {
-        /// <summary>TODO The generate user identity async.</summary>
-        /// <param name="manager">TODO The manager.</param>
-        /// <returns>The <see cref="Task"/>.</returns>
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType
@@ -36,23 +21,18 @@ namespace $safeprojectname$.Models
         }
     }
 
-    /// <summary>TODO The application db context.</summary>
+    [ExcludeFromCodeCoverage]
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
-        /// <summary>Initializes a new instance of the <see cref="ApplicationDbContext"/> class.</summary>
         public ApplicationDbContext() : base("DefaultConnection", throwIfV1Schema: false)
         {
         }
 
-        /// <summary>TODO The create.</summary>
-        /// <returns>The <see cref="ApplicationDbContext"/>.</returns>
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
         }
 
-        /// <summary>TODO The on model creating.</summary>
-        /// <param name="modelBuilder">TODO The model builder.</param>
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             // base.OnModelCreating(modelBuilder);

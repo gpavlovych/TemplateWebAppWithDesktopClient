@@ -1,32 +1,15 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="SomeApiControllerTests.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   Some api controller tests.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-
-
-using System.Linq;
-using System.Net;
+﻿using System.Net;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Security.Authentication;
 using System.Threading.Tasks;
 using FluentAssertions;
-using $saferootprojectname$.Web.Models;
-using $saferootprojectname$.Web.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;
+using $saferootprojectname$.Web.Models;
+using $saferootprojectname$.Web.Controllers;
 using Ploeh.AutoFixture;
 
 namespace $safeprojectname$.Controllers
 {
-    /// <summary>
-    /// Tests for <see cref="SomeApiController"/>
-    /// </summary>
     [TestClass]
     public class SomeApiControllerTests
     {

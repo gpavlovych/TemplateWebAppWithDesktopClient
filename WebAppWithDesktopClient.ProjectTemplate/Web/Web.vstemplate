@@ -77,7 +77,10 @@
       <Folder Name="Scripts" TargetFolderName="Scripts">
         <ProjectItem ReplaceParameters="true" TargetFileName="_references.js">_references.js</ProjectItem>
       </Folder>
-      <Folder Name="Services" TargetFolderName="Services" />
+      <Folder Name="Services" TargetFolderName="Services">
+        <ProjectItem ReplaceParameters="true" TargetFileName="IUserService.cs">IUserService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="UserService.cs">UserService.cs</ProjectItem>
+      </Folder>
       <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
       <Folder Name="Views" TargetFolderName="Views">
         <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
@@ -175,7 +178,7 @@
       <package id="Microsoft.Owin.Security.Twitter" version="3.0.1" targetFramework="net452" />
       <package id="Microsoft.Web.Infrastructure" version="1.0.0.0" targetFramework="net452" />
       <package id="Modernizr" version="2.6.2" targetFramework="net452" />
-      <package id="Newtonsoft.Json" version="6.0.4" targetFramework="net452" />
+      <package id="Newtonsoft.Json" version="8.0.3" targetFramework="net452" />
       <package id="Owin" version="1.0" targetFramework="net452" />
       <package id="PagedList" version="1.17.0.0" targetFramework="net452" />
       <package id="PagedList.Mvc" version="4.5.0.0" targetFramework="net452" />

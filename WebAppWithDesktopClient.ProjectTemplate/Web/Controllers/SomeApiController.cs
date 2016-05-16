@@ -1,13 +1,4 @@
-﻿// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="SomeApiController.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   Some api controller.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
-
-using System;
+﻿using System;
 using System.Net;
 using System.Net.Http;
 using System.Net.Http.Headers;
@@ -31,11 +22,11 @@ namespace $safeprojectname$.Controllers
         /// </summary>
         private readonly IGenericRepository<ApplicationUser> _userRepository;
 
-    /// <summary>
-    /// Initializes a new instance of the <see cref="SomeApiController" /> class.
-    /// </summary>
-    /// <param name="userRepository">The user repository.</param>
-    public SomeApiController(IGenericRepository<ApplicationUser> userRepository)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="SomeApiController" /> class.
+        /// </summary>
+        /// <param name="userRepository">The user repository.</param>
+        public SomeApiController(IGenericRepository<ApplicationUser> userRepository)
         {
             this._userRepository = userRepository;
         }

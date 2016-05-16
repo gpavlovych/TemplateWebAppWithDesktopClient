@@ -1,30 +1,17 @@
-// --------------------------------------------------------------------------------------------------------------------
-// <copyright file="IdentityBasicAuthenticationAttribute.cs" company="">
-//   
-// </copyright>
-// <summary>
-//   TODO The identity basic authentication attribute.
-// </summary>
-// --------------------------------------------------------------------------------------------------------------------
+using System.Diagnostics.CodeAnalysis;
+using System.Security.Claims;
+using System.Security.Principal;
+using System.Threading;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Identity;
+using Microsoft.AspNet.Identity.EntityFramework;
+using $safeprojectname$.Models;
 
 namespace $safeprojectname$.Filters
 {
-    using System.Security.Claims;
-    using System.Security.Principal;
-    using System.Threading;
-    using System.Threading.Tasks;
-    using Microsoft.AspNet.Identity;
-    using Microsoft.AspNet.Identity.EntityFramework;
-    using Models;
-
-    /// <summary>TODO The identity basic authentication attribute.</summary>
+    [ExcludeFromCodeCoverage]
     public class IdentityBasicAuthenticationAttribute : BasicAuthenticationAttribute
     {
-        /// <summary>TODO The authenticate async.</summary>
-        /// <param name="userName">TODO The user name.</param>
-        /// <param name="password">TODO The password.</param>
-        /// <param name="cancellationToken">TODO The cancellation token.</param>
-        /// <returns>The <see cref="Task"/>.</returns>
         protected override async Task<IPrincipal> AuthenticateAsync(string userName, string password, CancellationToken cancellationToken)
         {
             UserManager<ApplicationUser> userManager = CreateUserManager();
@@ -44,8 +31,6 @@ namespace $safeprojectname$.Filters
             return new ClaimsPrincipal(identity);
         }
 
-        /// <summary>TODO The create user manager.</summary>
-        /// <returns>The <see cref="UserManager"/>.</returns>
         private static UserManager<ApplicationUser> CreateUserManager()
         {
             return new UserManager<ApplicationUser>(new UserStore<ApplicationUser>(new ApplicationDbContext()));
